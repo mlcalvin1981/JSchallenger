@@ -1,0 +1,14 @@
+// Return the longest string from an array of strings
+
+// Write a function that takes an array of strings as argument. Return the longest string.
+
+function myFunction(arr){
+    let longest = arr[0];
+    for(i = 0; i < arr.length; i++){
+        if(longest.length < arr[i].length )
+        longest = arr[i];
+    }
+    return longest;
+}
+
+console.log(myFunction(['help', 'me']));
